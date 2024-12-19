@@ -1,0 +1,1 @@
+(()=>{"use strict";chrome.tabs.onUpdated.addListener((function(t,e,s){var c;"complete"===e.status&&(null===(c=s.url)||void 0===c?void 0:c.includes("x.com"))&&(chrome.scripting.executeScript({target:{tabId:t},files:["content.js"]}),chrome.scripting.insertCSS({target:{tabId:t},files:["/styles.css"]}))}))})();

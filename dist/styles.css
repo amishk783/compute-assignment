@@ -1,0 +1,14 @@
+.quote-tweet-button {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    border: 0;
+    cursor: pointer;
+    right: 0;
+    background-color: transparent;
+
+
+}
