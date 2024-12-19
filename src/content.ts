@@ -45,7 +45,6 @@ function injectQuoteButton(textareaContainer: Element): void {
   }
 }
 
-
 const observer = new MutationObserver((mutations: MutationRecord[]) => {
   mutations.forEach((mutation) => {
     mutation.addedNodes.forEach((node) => {
@@ -65,9 +64,8 @@ const observer = new MutationObserver((mutations: MutationRecord[]) => {
             }, 100);
           });
         }
-        const modalSelector =
-          'div[aria-labelledby="modal-header"][aria-modal="true"][role="dialog"]';
-        const modelIsOpen = document.querySelector(modalSelector);
+
+        const modelIsOpen = document.querySelector(MODAL_SELECTOR);
 
         if (tweetTextarea && modelIsOpen) {
           console.log("Textarea found");
